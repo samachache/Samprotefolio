@@ -1,0 +1,174 @@
+*{margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+*a{
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    padding-top: 0.5%;
+    border-bottom: 5px solid #a8133d;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+
+}
+.sam{
+    font-size: x-large;
+    color:#a8133d;
+}
+.Presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 8%;
+}
+.Presentation img{
+    border-radius: 10%;
+    border: #a8133d solid;
+    width: 6cm;
+    
+}
+.Presentation p{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: x-large;
+    justify-content: left;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+    font-size: large;
+}
+ 
+.textn1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+    transform: translateY(-200px);
+    opacity: 0;
+}
+
+.reveal:hover + .textn1 {
+    animation: 1s apparait forwards ease-out;
+}
+
+@keyframes apparait {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.S3D{
+    background-color: antiquewhite;
+    padding-left: 10%;
+    padding-right:10%;
+}
+.proj{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    gap: 5cm;
+}
+.S3D img{
+    width: 20%;
+}
+
+.blog{
+    display: flex;
+    background-color: white;
+    font-color
+}
+.blog p{
+    color: white ;
+}
+.blog img{
+
+    width: 20%;
+}
+.blog video{
+    width: 500PX;
+}
+section:hover>.container{
+background-color: black;
+transition: 2s;
+}
+
+.SJV{
+    width: 300px;
+    background-color: blue;
+}
+.container img{
+    width: 5cm;
+}
+
+main:hover>.S3D img{
+width: 100%;
+transition: 4s;
+padding-bottom: 10%;
+gap: 0;
+}
+
+
+@media screen and (max-width: 700px){
+        section{
+            flex-direction: column;
+            text-align: center;
+            margin-top: 40px;
+        }
+        section img{
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+}
+
+@media screen and (max-width:500px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.rotate {
+    max-width: 70px;
+    animation: tourne 3s linear infinite;
+    display: block;
+    margin: 40px auto;
+}
+
+@keyframes tourne {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
